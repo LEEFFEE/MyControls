@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MultiFuncDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <!--移除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--去除顶部标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗体透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--背景透明-->
+        <item name="android:background">@android:color/white</item>
+        <!--窗体背景透明-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@null</item>
+        <!--窗体是否浮动-->
+        <item name="android:windowIsFloating">false</item>
+        <!--背景是否昏暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--昏暗数量-->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+</resources>

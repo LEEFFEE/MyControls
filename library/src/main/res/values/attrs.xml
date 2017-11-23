@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置界面条目-->
+    <declare-styleable name="BubbleLayout">
+        <attr name="shadowColor" format="color"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="halfBaseOfLeg" format="dimension"/>
+        <attr name="bubbleLegOffset" format="dimension"/>
+        <attr name="bubbleLegOrientation">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="1"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="2"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="3"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="4"/>
+        </attr>
+    </declare-styleable>
+    <!-- 自定义圆形进度条，属性设置 -->
+    <declare-styleable name="CircleProgressButton">
+        <!-- 默认圆的颜色 -->
+        <attr name="progress_default_color" format="color"/>
+        <!-- 进度圆的颜色 -->
+        <attr name="progress_reached_color" format="color"/>
+        <!-- 进度中心的颜色 -->
+        <attr name="progress_center_color" format="color"/>
+        <!-- 进度条的高度 -->
+        <attr name="progress_reached_width" format="dimension"/>
+        <!-- 无进度时(默认圆)的边框高 -->
+        <attr name="progress_default_width" format="dimension"/>
+        <!-- 圆的半径 -->
+        <attr name="circle_radius" format="dimension"/>
+    </declare-styleable>
+</resources>

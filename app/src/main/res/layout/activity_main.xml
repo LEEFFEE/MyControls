@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cn.leeffee.mycontrols.MainActivity">
 
-    <TextView
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btnPopup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+        android:text="弹框"/>
+
+    <cn.leeffee.library.widget.BubbleLayout
+        android:id="@+id/brlBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:bubbleLegOffset="45dp"
+        app:bubbleLegOrientation="bottom"
+        app:cornerRadius="8dp"
+        app:halfBaseOfLeg="10dp"
+        app:padding="10dp"
+        app:shadowColor="#64000000"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="你好sfdsgfdsgfdgd"/>
+    </cn.leeffee.library.widget.BubbleLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.leeffee.library.widget.CircleProgressButton
+            android:id="@+id/circleProgressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            app:progress_default_width="5dp"
+            app:progress_reached_color="@color/colorPrimary"
+            app:progress_reached_width="5dp"/>
+    </RelativeLayout>
+</LinearLayout>
